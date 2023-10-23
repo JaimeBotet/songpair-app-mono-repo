@@ -1,0 +1,28 @@
+@import "../../../styles/variables.scss";
+
+.down-layer {
+	overflow: hidden !important;
+	z-index: 99;
+    position: absolute;
+	width: 100vw;
+	height: 100vh;
+	left: 0;
+	bottom: -100vh;
+	background-color: $primary;
+	transition: all 1s cubic-bezier(0.645, 0.045, 0.355, 1);
+	&.active {
+        bottom: 0;
+    }
+}
+.down-layer--2 {
+	background-color: $primary;
+	transition-delay: 0.3s;
+}
+.down-layer--3  {
+	background-color: $primary;
+	transition-delay: 0.12s;
+}
+.down-layer--4 {
+	background-color: #000000;
+	transition-delay: 0.08s;
+}

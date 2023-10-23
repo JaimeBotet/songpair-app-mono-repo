@@ -1,0 +1,26 @@
+@import "../../../styles/variables.scss";
+
+.left-layer {
+	z-index: 99;
+    position: absolute;
+	width: 100vw;
+	height: 100vh;
+	left: -100vw;
+	background-color: $primary;
+	transition: all 1s cubic-bezier(0.645, 0.045, 0.355, 1);
+	&.active {
+        left: 0;
+    }
+}
+.left-layer--2 {
+	background-color: $primary;
+	transition-delay: 0.3s;
+}
+.left-layer--3  {
+	background-color: $primary;
+	transition-delay: 0.12s;
+}
+.left-layer--4 {
+	background-color: #000000;
+	transition-delay: 0.08s;
+}

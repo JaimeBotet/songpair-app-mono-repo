@@ -1,0 +1,49 @@
+{
+  "name": "songpair-backend",
+  "version": "1.0.0",
+  "description": "Web Application based on getting the current playing song on the user device and share it with others on a map. So a user can interact and discover what others around him is listening!",
+  "main": "index.js",
+  "scripts": {
+    "start": "node src/app.js",
+    "dev": "nodemon src/app.js",
+    "test": "jest --watchAll"
+  },
+  "keywords": [
+    "spotify",
+    "song",
+    "share",
+    "social",
+    "discover",
+    "near",
+    "users",
+    "music",
+    "playing"
+  ],
+  "author": "Guilherme Carra and Jaime Botet",
+  "license": "ISC",
+  "dependencies": {
+    "@shelf/jest-mongodb": "^1.2.3",
+    "axios": "^0.21.1",
+    "bcrypt": "^5.0.0",
+    "cors": "^2.8.5",
+    "dotenv": "^8.2.0",
+    "email-validator": "^2.0.4",
+    "express": "^4.17.1",
+    "jest": "^26.6.3",
+    "jsonwebtoken": "^8.5.1",
+    "mongoose": "^5.10.14",
+    "mongoose-beautiful-unique-validation": "^7.1.1",
+    "passport": "^0.4.1",
+    "passport-http-bearer": "^1.0.1",
+    "passport-jwt": "^4.0.0",
+    "passport-local": "^1.0.0",
+    "socket.io": "^3.0.4",
+    "supertest": "^6.0.1"
+  },
+  "engines": {
+    "node": "14.3.0"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.6"
+  }
+}

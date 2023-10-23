@@ -1,0 +1,26 @@
+.chat {
+  height: 90vh;
+  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+  font-size: 1.3em;
+  .header {
+    color: white;
+    height: 20%;
+  }
+  .avatar {
+    text-align: center;
+    & img {
+      width: 80px;
+      border-radius: 100%;
+    }
+  }
+  .username {
+    display: flex;
+    align-content: center;
+    text-align: left;
+    color: #ffffff;
+  }
+  .chat-row {
+    display: flex;
+    align-items: center;
+  }
+}

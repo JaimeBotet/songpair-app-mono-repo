@@ -1,0 +1,21 @@
+@import "../../styles/variables.scss";
+
+.register-page {
+  position: relative;
+  overflow: hidden;
+  .row {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    align-content: center;
+  }
+  .btn {
+    margin: 15px auto;
+  }
+  .avatar{
+      margin: 10px auto;
+      width: 150px;
+      border-radius: 100%;
+  }
+}

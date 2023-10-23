@@ -1,0 +1,12 @@
+.notification {
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  color: white;
+  visibility: visible;
+  z-index: 9999;
+  position: absolute;
+  left: 0;
+  bottom: 10px;
+  padding: 10px 0;
+  text-align: center;
+  cursor: pointer;
+}

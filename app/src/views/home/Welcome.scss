@@ -1,0 +1,48 @@
+.welcome-page {
+    position: relative;
+    overflow: hidden;
+    .row {
+        height: 100vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        align-content: center;
+    }
+    .btn {
+        margin: 15px auto;
+    }
+    .music-icon {
+        overflow: hidden;
+        color: #fff;
+    }
+    .move-right {
+        text-align: right;
+        animation: goingRight 2s infinite;
+    }
+    .move-left {
+        text-align: center;
+        opacity: 0;
+        animation: goingLeft 2s infinite;
+        animation-delay: 1s;
+    }
+}
+
+@keyframes goingRight {
+    0% { transform: translate(0, 0) rotate(0deg); opacity: 0; }
+    50% { transform: translate(65px, -5px) rotate(-30deg); opacity: 1; }
+    51% { transform: translate(65px, -5px) rotate(-30deg); opacity: 0.8; }
+    52% { transform: translate(65px, -5px) rotate(-30deg); opacity: 0.5; }
+    53% { transform: translate(65px, -5px) rotate(-30deg); opacity: 0.2; }
+    54% { transform: translate(65px, -5px) rotate(-30deg); opacity: 0; }
+    100% { transform: translate(0, 0); opacity: 0; }
+}
+
+@keyframes goingLeft {
+    0% { transform: translate(0, 30px) rotate(0deg); opacity: 0; }
+    50% { transform: translate(-40px, -25px) rotate(50deg); opacity: 1; }
+    51% { transform: translate(-40px, -25px) rotate(50deg); opacity: 0.8; }
+    52% { transform: translate(-40px, -25px) rotate(50deg); opacity: 0.5; }
+    53% { transform: translate(-40px, -25px) rotate(50deg); opacity: 0.2; }
+    54% { transform: translate(-40px, -25px) rotate(50deg); opacity: 0; }
+    100% { transform: translate(0, 30px); opacity: 0; }
+}

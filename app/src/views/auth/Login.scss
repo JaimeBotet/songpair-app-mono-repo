@@ -1,0 +1,64 @@
+@import "../../styles/variables.scss";
+
+.login-page {
+  position: relative;
+  overflow: hidden;
+  .row {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    align-content: center;
+  }
+  .btn {
+    margin: 15px auto;
+  }
+}
+
+.fade-in {
+  animation: fadein 0.7s 1 forwards;
+}
+
+.fade-out {
+  animation: fadeout 0.7s 1 forwards;
+}
+
+.spotify-btn {
+  background-color: $primary;
+  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+  font-size: 1.3rem;
+  text-align: center;
+  color: #ffffff;
+  padding: 8px;
+  border-radius: 18px;
+}
+
+.spotify-btn:hover {
+  background-color: $primary;
+  text-align: center;
+  color: #ffffff;
+  padding: 8px;
+  border-radius: 18px;
+}
+
+@keyframes fadein {
+  0% {
+    transform: translate(-30px, 0);
+    opacity: 0;
+  }
+  100% {
+    transform: translate(0, 0);
+    opacity: 1;
+  }
+}
+
+@keyframes fadeout {
+  0% {
+    transform: translate(0, 0);
+    opacity: 1;
+  }
+  100% {
+    transform: translate(-30px, 0);
+    opacity: 0;
+  }
+}

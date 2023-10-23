@@ -1,0 +1,19 @@
+{
+  "name": "songpair-app",
+  "private": true,
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "workspaces":[
+	"api",
+	"app"
+  ],
+  "scripts": {
+    "build": "npm run build -w app",
+	"start": "npm run start -w api",
+	"dev:api": "npm run build && npm run dev -w api"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}

@@ -1,0 +1,78 @@
+.profile-page {
+  height: 90vh;
+  max-height: 660px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  align-content: space-around;
+  color: white;
+  @media screen and (orientation:landscape) {
+    min-height: 650px;
+  }
+  .avatar {
+    text-align: center;
+    img {
+      margin: 10px auto;
+      width: 90px;
+      border-radius: 100%;
+    }
+  }
+  .playing {
+    padding: 10px 0;
+    margin-top: 6px;
+    border-radius: 10px;
+    text-align: left;
+    background-color: rgba(128, 128, 128, 0.300);
+    img {
+      width: 100%;
+    }
+    .music {
+      align-self: center;
+      &-title {
+        font-weight: bold;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+      }
+    }
+    .music-actions {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-evenly;
+      span {
+        font-size: 0.8em;
+        margin-left: 5px;
+      }
+    }
+  }
+  .status {
+    justify-content: space-between;
+    .total-likes, .most-liked {
+      padding: 15px 15px;
+      background-color: rgba(128, 128, 128, 0.300);
+      border-radius: 10px;
+    }
+    .most-liked {
+      .music {
+        font-size: 0.85rem;
+        &-title {
+          font-weight: bold;
+          white-space: nowrap;
+          overflow: hidden;
+          text-overflow: ellipsis;
+        }
+      }
+      img {
+        width: 100%;
+      }
+      span {
+        margin-left: 5px;
+      }
+    }
+    .total-likes {
+      display: flex;
+      align-items: center;
+      text-align: center;
+    }
+  }
+}

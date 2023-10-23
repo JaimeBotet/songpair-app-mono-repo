@@ -1,0 +1,31 @@
+.dashboard {
+  height: 100vh;
+  .header {
+    color: white;
+    height: 20%;
+    .logo {
+      font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+      font-size: 1.2em;
+    }
+    .avatar {
+      margin: 10px auto;
+      width: 80px;
+      border-radius: 100%;
+    }
+    .username {
+      font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+      margin-left: 1em;
+      font-size: 1.3em;
+    }
+  }
+  .menu {
+    color: white;
+    height: 70%;
+    text-align: center;
+    & > * {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+  }
+}
